@@ -1,75 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earth Bakery</title>
+    <title>Bakery Company</title>
     <style>
+        /* CSS code */
         body {
+            background-color: #f5f3e6;
             font-family: Arial, sans-serif;
-            background-color: #e0c9a1; /* Earth toned background */
             margin: 0;
             padding: 0;
-            color: #654321; /* Dark brown text */
         }
-
+        
         header {
-            background-color: #dbc4a1; /* Light earth toned header */
+            background-color: #d9c5a4;
             padding: 20px;
             text-align: center;
         }
-
+        
+        nav {
+            margin-top: 10px;
+        }
+        
         nav a {
-            margin: 0 10px;
+            color: #4a3f35;
             text-decoration: none;
-            color: #654321; /* Dark brown text */
+            margin: 0 20px;
         }
-
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
+        
         footer {
-            background-color: #dbc4a1; /* Light earth toned footer */
+            background-color: #d9c5a4;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .content {
             padding: 20px;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
-
+        
+        .pastry-image {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        h1 {
+            color: #4a3f35;
+        }
+        
+        h2 {
+            color: #4a3f35;
+            margin-top: 20px;
+        }
+        
         form {
             margin-top: 20px;
             text-align: center;
         }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
+        
+        input[type="text"], textarea {
             width: 300px;
-            padding: 10px;
-            margin: 5px;
-            border-radius: 5px;
-            border: 1px solid #654321; /* Dark brown border */
+            padding: 5px;
+            margin-bottom: 10px;
         }
-
+        
         input[type="submit"] {
-            padding: 10px 20px;
-            background-color: #654321; /* Dark brown button */
-            color: white;
+            background-color: #4a3f35;
+            color: #ffffff;
+            padding: 8px 16px;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #543c24; /* Darker brown button on hover */
         }
     </style>
 </head>
-
 <body>
     <header>
         <nav>
@@ -78,52 +80,52 @@
             <a href="#locations">Locations</a>
         </nav>
     </header>
-
-    <section id="home">
-        <h2>Welcome to Earth Bakery!</h2>
-        <p>Indulge in our delicious pastries made with love and care.</p>
-    </section>
-
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <div>
-            <img src="pastries.jpg" alt="Pastries">
-            <p>Our pastries are baked fresh daily using only the finest ingredients.</p>
-            <p>Choose from a variety of:</p>
-            <ul>
-                <li>Croissants</li>
-                <li>Donuts</li>
-                <li>Muffins</li>
-                <li>Cakes</li>
-                <!-- Add more pastries as needed -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="locations">
-        <h2>Our Locations</h2>
-        <p>Find us at these locations:</p>
+    
+    <div class="content">
+        <h1>Welcome to our Bakery!</h1>
+        
+        <img class="pastry-image" src="pastry.jpg" alt="Pastry Image">
+        
+        <h2>About Our Pastries</h2>
+        <p>
+            We offer a wide variety of delicious pastries made with love and care. From flaky croissants to mouthwatering
+            cakes, we have something to satisfy every sweet tooth. Our pastries are freshly baked daily using only the finest ingredients.
+        </p>
+        
+        <h2>Menu</h2>
+        <p>
+            Check out our menu below to see the delectable treats we have to offer:
+        </p>
         <ul>
-            <li>123 Main Street</li>
-            <li>456 Elm Avenue</li>
-            <li>789 Oak Boulevard</li>
-            <!-- Add more locations as needed -->
+            <li>Croissants</li>
+            <li>Donuts</li>
+            <li>Pies</li>
+            <li>Cakes</li>
+            <li>Cookies</li>
+            <li>and much more...</li>
         </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Earth Bakery. All rights reserved.</p>
+        
+        <h2>Locations</h2>
+        <p>
+            Visit us at one of our convenient locations:
+        </p>
+        <ul>
+            <li>123 Main Street, City1</li>
+            <li>456 Maple Avenue, City2</li>
+            <li>789 Oak Street, City3</li>
+        </ul>
+        
         <form>
             <h2>Contact Us</h2>
-            <input type="text" placeholder="Your Name">
-            <br>
-            <input type="email" placeholder="Your Email">
-            <br>
-            <textarea placeholder="Your Message"></textarea>
-            <br>
-            <input type="submit" value="Send">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="text" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" rows="4" required></textarea><br>
+            <input type="submit" value="Send Message">
         </form>
+    </div>
+    
+    <footer>
+        &copy; 2024 Bakery Company. All rights reserved.
     </footer>
 </body>
-
 </html>
